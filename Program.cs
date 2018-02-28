@@ -1,6 +1,7 @@
 ﻿using System;
 using codingChallenges.FizzBuzz;
 using codingChallenges.Palindrome;
+using codingChallenges.ProjectEuler;
 using codingChallenges.UserInput;
 namespace codingChallenges
 {
@@ -9,7 +10,7 @@ namespace codingChallenges
         private static FizzBuzzSolution _fizzBuzzSolution = new FizzBuzzSolution();
         private static PalindromeSolution _palindromeSolution = new PalindromeSolution();        
         private static UserInputSolution _userInputSolution = new UserInputSolution();
-      
+        private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -33,6 +34,14 @@ namespace codingChallenges
             Console.WriteLine("Coding challange: UserInput"); 
             Console.Write("UserInput should print out 10. And it printed out -> ");
             _userInputSolution.UserInterface();
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
+
+            Console.WriteLine("Coding Challenge : Multiplier of 3 and 5");
+            Console.WriteLine("Natural numbers below 10");
+            _multiplierOf3And5.naturalNumbersBelow10();
+            Console.WriteLine("\r\nNatural numbers below 1000");
+            _multiplierOf3And5.naturalNumbersBelow1000();
 
 
 
