@@ -38,7 +38,7 @@ namespace codingChallenges.Palindrome
             //loops through half the letters of the word
             while (f<s)
             {
-                // The wile loops goes through the index possisions of 
+                // The while loops goes through the index possisions of 
                 // the words from start and end to the middle.
                 // This way half of the first letters of the word is compared 
                 // to the reversed last half of the letters of the words  
