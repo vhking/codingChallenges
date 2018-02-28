@@ -11,6 +11,7 @@ namespace codingChallenges
         private static PalindromeSolution _palindromeSolution = new PalindromeSolution();        
         private static UserInputSolution _userInputSolution = new UserInputSolution();
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
+        private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -42,6 +43,15 @@ namespace codingChallenges
             _multiplierOf3And5.naturalNumbersBelow10();
             Console.WriteLine("\r\nNatural numbers below 1000");
             _multiplierOf3And5.naturalNumbersBelow1000();
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
+          
+            Console.WriteLine("Coding Challenge : Even Fibonacci numbers");
+             _evenFibonaccciNumbers.EvenFibonacciSquence4M();
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
+            
+
 
 
 
