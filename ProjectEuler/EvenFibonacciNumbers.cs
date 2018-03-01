@@ -14,11 +14,13 @@ namespace codingChallenges.ProjectEuler
         {
             List<int> intList = new List<int>();
 
-            bool fibonacciSquence = true;
+            bool fibonacciSquence = true;            
+             // first value of the addition
             int i = 1;
-            int j = 2;           
+            // second value of the addition
+            int j = 1;           
+            // Holds the temp value from i+j
             int k = 0;
-            intList.Add(j);
 
             while (fibonacciSquence)
             {
@@ -32,13 +34,40 @@ namespace codingChallenges.ProjectEuler
                 i = j;               
                 j = k;
                              
-                if (i >= 4000000)
+                if (i > 4000000)
                 {
                     fibonacciSquence = false;
                 }
             }
 
             Console.WriteLine("the sum of the even-valued terms = " + intList.Sum());
+        } 
+
+        // Simplified version
+         public void EvenFibonacciSquence4MSimplified()
+        {
+            // Holds the sum of the even-valued terms
+            int sum = 0;
+
+            // first value of the addition
+            int i = 1;
+            // second value of the addition
+            int j = 1;           
+            // Holds the temp value from i+j
+            int k = 0;
+            
+            // Fibonacci squence limit
+            int limit = 4000000;
+            // while k is lower than the limit the while loop will continue.
+            while (k<limit)
+            {
+                k = i + j;
+                if (k % 2 == 0){ sum += k;}
+                i = j;               
+                j = k;
+            }
+
+            Console.WriteLine("the sum of the even-valued terms = " + sum);
         } 
 
 
