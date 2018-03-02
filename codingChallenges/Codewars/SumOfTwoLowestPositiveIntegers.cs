@@ -1,5 +1,7 @@
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace codingChallenges.CodeWars
 {
@@ -16,31 +18,57 @@ namespace codingChallenges.CodeWars
     {
 	    public int sumTwoSmallestNumbers(int[] numbers)
 	    {
-            
+          List<int> negativeNumberList = new List<int>();
+          List<int> positiveNumberList = new List<int>();
+
+          foreach (var item in numbers)
+          {
+              if (item < 0)
+              {
+                  negativeNumberList.Add(item);
+              }
+              else
+              {
+                  positiveNumberList.Add(item);
+              }
+          }
+            positiveNumberList.Sort();
             //int result = 0;
-            int firstValue = numbers[0];
-            int secondValue = numbers[1];
+            int firstValue = positiveNumberList[0];
+            int secondValue = positiveNumberList[1];
+
+           
+
          
             //int tempValue = 0;
-            foreach (var item in numbers)
+            foreach (var item in positiveNumberList)
             {
-                             
-                if (item < firstValue)
-                {
-                    Console.WriteLine(secondValue + " " + item);
-                    firstValue = item;                   
-                } 
-                if (firstValue < secondValue && item != firstValue && item < secondValue)
-                {
-                    Console.WriteLine(secondValue + " " + item);
-                    secondValue = item;
-                }             
+                       
+                    if (item < firstValue)
+                    {
+                        Console.WriteLine(secondValue + " " + item);
+                        firstValue = item;     
+                                 
+                    } 
+                    if (firstValue < secondValue && item != firstValue && item < secondValue)
+                    {
+                    
+                         Console.WriteLine(secondValue + " " + item);
+                         secondValue = item;
+                    }      
+                      
             }
           
             Console.WriteLine(firstValue + " " + secondValue);
 		    return firstValue + secondValue;
 	    }
+
+         public int sumTwoSmallestNumbersLinq(int[] numbers)
+         {
+             return numbers.OrderBy(o=> o).Take(2).Sum();
+         }
     }
+    
 
 }
 

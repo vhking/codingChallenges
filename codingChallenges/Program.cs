@@ -60,7 +60,7 @@ namespace codingChallenges
             Console.WriteLine("");
 
             Console.WriteLine("Coding Challenge : blabla");
-            int[] numbers = {5, 8, 12, 19, 22};
+            int[] numbers = {-1, 2, 10, 5, 100, -10, -100 , 0};
             _sum.sumTwoSmallestNumbers(numbers);
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
