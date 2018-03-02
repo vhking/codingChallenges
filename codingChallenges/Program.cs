@@ -1,4 +1,5 @@
 ﻿using System;
+using codingChallenges.CodeWars;
 using codingChallenges.FizzBuzz;
 using codingChallenges.Palindrome;
 using codingChallenges.ProjectEuler;
@@ -13,6 +14,7 @@ namespace codingChallenges
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
+        private static SumOfTwoLowestPositiveIntegers _sum = new SumOfTwoLowestPositiveIntegers();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -54,6 +56,12 @@ namespace codingChallenges
             
             Console.WriteLine("Coding Challenge : Largest prime factor");
             _largetPrimeFactor.FindLargestPrimeFactor();         
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
+
+            Console.WriteLine("Coding Challenge : blabla");
+            int[] numbers = {5, 8, 12, 19, 22};
+            _sum.sumTwoSmallestNumbers(numbers);
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
 

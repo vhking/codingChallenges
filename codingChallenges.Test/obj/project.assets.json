@@ -1634,6 +1634,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "codingChallenges/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/codingChallenges.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/codingChallenges.dll": {}
+        }
       }
     }
   },
@@ -5625,6 +5638,11 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "codingChallenges/1.0.0": {
+      "type": "project",
+      "path": "../codingChallenges/codingChallenges.csproj",
+      "msbuildProject": "../codingChallenges/codingChallenges.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5632,6 +5650,7 @@
       "Microsoft.NET.Test.Sdk >= 15.5.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "NUnit3TestAdapter >= 3.9.0",
+      "codingChallenges >= 1.0.0",
       "nunit >= 3.9.0"
     ]
   },
@@ -5643,11 +5662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallengesMain\\codingChallenges.Test\\codingChallenges.Test.csproj",
+      "projectUniqueName": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallenges\\codingChallenges.Test\\codingChallenges.Test.csproj",
       "projectName": "codingChallenges.Test",
-      "projectPath": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallengesMain\\codingChallenges.Test\\codingChallenges.Test.csproj",
+      "projectPath": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallenges\\codingChallenges.Test\\codingChallenges.Test.csproj",
       "packagesPath": "C:\\Users\\helt0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallengesMain\\codingChallenges.Test\\obj\\",
+      "outputPath": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallenges\\codingChallenges.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -5667,7 +5686,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallenges\\codingChallenges\\codingChallenges.csproj": {
+              "projectPath": "C:\\Users\\helt0\\Documents\\Visual Studio 2017\\Projects\\codingChallenges\\codingChallenges\\codingChallenges.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

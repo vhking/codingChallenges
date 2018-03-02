@@ -1,0 +1,15 @@
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\NUnit3.TestAdapter.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\nunit.engine.netstandard.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\Mono.Cecil.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.Test.deps.json
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.Test.runtimeconfig.json
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.Test.runtimeconfig.dev.json
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.Test.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.Test.pdb
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\bin\Debug\netcoreapp2.0\codingChallenges.pdb
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\obj\Debug\netcoreapp2.0\codingChallenges.Test.csproj.CoreCompileInputs.cache
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\obj\Debug\netcoreapp2.0\codingChallenges.Test.AssemblyInfoInputs.cache
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\obj\Debug\netcoreapp2.0\codingChallenges.Test.AssemblyInfo.cs
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\obj\Debug\netcoreapp2.0\codingChallenges.Test.dll
+C:\Users\helt0\Documents\Visual Studio 2017\Projects\codingChallenges\codingChallenges.Test\obj\Debug\netcoreapp2.0\codingChallenges.Test.pdb
