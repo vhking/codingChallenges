@@ -15,6 +15,7 @@ namespace codingChallenges
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
         private static SumOfTwoLowestPositiveIntegers _sum = new SumOfTwoLowestPositiveIntegers();
+        private static BuildTower _tower = new BuildTower();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -64,6 +65,13 @@ namespace codingChallenges
             _sum.sumTwoSmallestNumbers(numbers);
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
+
+            //  Console.WriteLine("Coding Challenge : towerBuild");      
+            //  int floors = 3;   
+            // _tower.TowerBuilder(floors);
+            // Console.WriteLine("\r\n***********************************");            
+            // Console.WriteLine("");
+
 
 
 
