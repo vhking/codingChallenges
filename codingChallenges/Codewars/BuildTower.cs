@@ -29,15 +29,6 @@ namespace codingChallenges.CodeWars
         ' ********* ', 
         '***********'
         ]
-        space 20,18,16,14,12,10,8 ,6 ,4 ,2 ,0
-        stars 1 ,3 ,5 ,7 ,9 ,11,13,15,17,19,21
-        index 0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10
-        floor 1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10,11 
-
-        space 4 ,2 ,0 
-        stars 1 ,3 ,5
-        index 0 ,1 ,2
-        floor 1 ,2 ,3  
 
      */
      
@@ -57,8 +48,7 @@ namespace codingChallenges.CodeWars
            string[] tower  = new string[nFloors];
            int currentFloor = nFloors;
            int spacesInt = 0;
-           string spaces;
-           
+           string spaces;           
          
 
            for (int i = nFloors -1; 0 <= i; i--)
@@ -68,6 +58,7 @@ namespace codingChallenges.CodeWars
                string floorStar = String.Concat(Enumerable.Repeat("*", stars));                
                spaces = String.Concat(Enumerable.Repeat(" ", spacesInt));  
                 
+               // First increment check /w outs spaces 
                if (i == nFloors-1)
                {
                     tower[i] = String.Format("{0}",floorStar);
@@ -75,10 +66,10 @@ namespace codingChallenges.CodeWars
                {
                     tower[i] = String.Format("{0}{1}{2}",spaces,floorStar,spaces);
                }          
-
+               // first increment check 
                if (spacesInt == 0)
                {
-                   spacesInt =((stars - stars)+2)/2; //1
+                   spacesInt =((stars - stars)+2)/2; 
                }else
                {
                    spacesInt = spacesInt +1;                   

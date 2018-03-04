@@ -16,6 +16,7 @@ namespace codingChallenges
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
         private static SumOfTwoLowestPositiveIntegers _sum = new SumOfTwoLowestPositiveIntegers();
         private static BuildTower _tower = new BuildTower();
+        private static HighestAndLowest _highLow = new HighestAndLowest();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -66,11 +67,11 @@ namespace codingChallenges
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
 
-            //  Console.WriteLine("Coding Challenge : towerBuild");      
-            //  int floors = 3;   
-            // _tower.TowerBuilder(floors);
-            // Console.WriteLine("\r\n***********************************");            
-            // Console.WriteLine("");
+             Console.WriteLine("Coding Challenge : towerBuild");      
+              
+            _highLow.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
 
 
 
