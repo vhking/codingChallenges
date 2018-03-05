@@ -24,11 +24,11 @@ namespace codingChallenges.CodeWars
             var minNum = numArray[0];
             for (int i = 0; i < numArray.Length; i++)
             {
-                if (Int16.Parse(numArray[i]) > Int16.Parse(maxNum))
+                if (Int32.Parse(numArray[i]) > Int32.Parse(maxNum))
                 {
                     maxNum = numArray[i];
                 }
-                if (Int16.Parse(numArray[i]) < Int16.Parse(minNum))
+                if (Int32.Parse(numArray[i]) < Int32.Parse(minNum))
                 {
                     minNum = numArray[i];
                 }

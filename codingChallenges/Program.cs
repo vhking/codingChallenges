@@ -17,6 +17,7 @@ namespace codingChallenges
         private static SumOfTwoLowestPositiveIntegers _sum = new SumOfTwoLowestPositiveIntegers();
         private static BuildTower _tower = new BuildTower();
         private static HighestAndLowest _highLow = new HighestAndLowest();
+        private static PersistentBugger _bugger = new PersistentBugger();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -61,17 +62,17 @@ namespace codingChallenges
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
 
-            Console.WriteLine("Coding Challenge : blabla");
-            int[] numbers = {-1, 2, 10, 5, 100, -10, -100 , 0};
-            _sum.sumTwoSmallestNumbers(numbers);
-            Console.WriteLine("\r\n***********************************");            
-            Console.WriteLine("");
+            // Console.WriteLine("Coding Challenge : blabla");
+            // int[] numbers = {-1, 2, 10, 5, 100, -10, -100 , 0};
+            // _sum.sumTwoSmallestNumbers(numbers);
+            // Console.WriteLine("\r\n***********************************");            
+            // Console.WriteLine("");
 
-             Console.WriteLine("Coding Challenge : towerBuild");      
+            //  Console.WriteLine("Coding Challenge : towerBuild");      
               
-            _highLow.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
-            Console.WriteLine("\r\n***********************************");            
-            Console.WriteLine("");
+            // _bugger.Persistence(39);
+            // Console.WriteLine("\r\n***********************************");            
+            // Console.WriteLine("");
 
 
 
