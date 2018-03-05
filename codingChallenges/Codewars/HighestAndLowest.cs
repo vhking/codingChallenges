@@ -24,6 +24,7 @@ namespace codingChallenges.CodeWars
             var minNum = numArray[0];
             for (int i = 0; i < numArray.Length; i++)
             {
+                // Compare current value of macNum and the value in the current index
                 if (Int32.Parse(numArray[i]) > Int32.Parse(maxNum))
                 {
                     maxNum = numArray[i];
@@ -33,24 +34,9 @@ namespace codingChallenges.CodeWars
                     minNum = numArray[i];
                 }
             }
-            var result = maxNum + " " + minNum;
-            return result;
+            
+            return maxNum + " " + minNum;;
         }
     }
     
 }
-
-// function highAndLow(numbers){
-//   var arr =numbers.split(' ');
-//   var max = arr[0],min =arr[0];
-//   for(var i = 0;i<arr.length;i++){
-//     if(parseInt(arr[i]) > max){
-//       max = arr[i];
-//     }
-//     if(parseInt(arr[i]) < min){
-//       min = arr[i]
-//     }
-//   }
-//   var result = max + ' ' + min;
-//   return result;
-// }

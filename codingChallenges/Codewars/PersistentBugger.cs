@@ -19,6 +19,7 @@ namespace codingChallenges.CodeWars
        public int Persistence(long n) 
 	    {           
             string tempNum = n.ToString();
+            // makes the number into a list
             var intList = tempNum.Select(digit => int.Parse(digit.ToString()));
            
             int count = 0;
@@ -33,6 +34,7 @@ namespace codingChallenges.CodeWars
                     sum *= item; // 1                    
                 }
                 string sumString = sum.ToString();
+                // creats new list based on the new sum
                 intList = sumString.Select(digit => int.Parse(digit.ToString()));   
                 ++count; 
             }

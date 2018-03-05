@@ -31,55 +31,63 @@ namespace codingChallenges.CodeWars
         ]
 
      */
-     
+
     public class BuildTower
     {
-        public string[] TowerBuilderSimplified(int nFloors)
+
+        // Best practic verison of the challenge
+        public string[] TowerBuilderBP(int nFloors)
         {
             var result = new string[nFloors];
-            for(int i=0;i<nFloors;i++)
-            result[i] = string.Concat(new string(' ',nFloors - i - 1),
-                                      new string('*',i * 2 + 1),
-                                      new string(' ',nFloors - i - 1));
+            for (int i = 0; i < nFloors; i++)
+                result[i] = string.Concat(new string(' ', nFloors - i - 1),
+                                          new string('*', i * 2 + 1),
+                                          new string(' ', nFloors - i - 1));
             return result;
         }
+
         public static string[] TowerBuilder(int nFloors)
         {
-           string[] tower  = new string[nFloors];
-           int currentFloor = nFloors;
-           int spacesInt = 0;
-           string spaces;           
-         
 
-           for (int i = nFloors -1; 0 <= i; i--)
-           { 
-               int stars = i+currentFloor; //21,19,17
+            string[] tower = new string[nFloors];
+            // starts with the botton floor
+            int currentFloor = nFloors;
+            // starts with 0 spaces on the botton floor
+            int spacesInt = 0;
+            // will hold whitespace characters            
+            string spaces;
 
-               string floorStar = String.Concat(Enumerable.Repeat("*", stars));                
-               spaces = String.Concat(Enumerable.Repeat(" ", spacesInt));  
-                
-               // First increment check /w outs spaces 
-               if (i == nFloors-1)
-               {
-                    tower[i] = String.Format("{0}",floorStar);
-               }else
-               {
-                    tower[i] = String.Format("{0}{1}{2}",spaces,floorStar,spaces);
-               }          
-               // first increment check 
-               if (spacesInt == 0)
-               {
-                   spacesInt =((stars - stars)+2)/2; 
-               }else
-               {
-                   spacesInt = spacesInt +1;                   
-               }
-               currentFloor--;
-           }
-            foreach (var item in tower)
+            //starts on the end of the array
+            for (int i = nFloors - 1; 0 <= i; i--)
             {
-               Console.WriteLine(item); 
-            } 
+                // holdes number of stars on current floor
+                int stars = i + currentFloor; 
+                // Repeats * (stars)
+                string floorStar = String.Concat(Enumerable.Repeat("*", stars));
+                // Repeats ' ' (whitespace characters)
+                spaces = String.Concat(Enumerable.Repeat(" ", spacesInt));
+
+                // First increment check /w outs spaces 
+                if (i == nFloors - 1)
+                {
+                    tower[i] = String.Format("{0}", floorStar);
+                }
+                else
+                {
+                    tower[i] = String.Format("{0}{1}{2}", spaces, floorStar, spaces);
+                }
+                // first increment check 
+                if (spacesInt == 0)
+                {
+                    spacesInt = ((stars - stars) + 2) / 2;
+                }
+                else
+                {
+                    spacesInt = spacesInt + 1;
+                }                
+                currentFloor--;
+            }
+          
             return tower;
         }
     }
