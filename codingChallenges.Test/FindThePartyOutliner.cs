@@ -11,7 +11,8 @@ namespace codingChallenges.Test
         [Test]
         public void Test1()
         {
-            int[] exampleTest1 = { 2, 6, 8, -10, 3 };
+            int[] exampleTest1 = { 2, 6, 8, -10, 3};
+            //int[] exampleTest1 = { 2, 4, 0, 100, 4, 11, 2602, 36};
             Assert.IsTrue(3 == _partyOutliner.Find(exampleTest1));
         }
 
