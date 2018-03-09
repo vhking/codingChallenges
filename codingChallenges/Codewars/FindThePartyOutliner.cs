@@ -53,7 +53,6 @@ namespace codingChallenges.CodeWars
                 }
 
             }
-
             // The return is required by the compiler, but only gets called if there are
             // no even in a odd array or vice versa
             return 0;
