@@ -70,7 +70,8 @@ namespace codingChallenges
 
             //  Console.WriteLine("Coding Challenge : towerBuild");      
               
-            // _bugger.Persistence(39);
+            //CamelCaseMethod.CamelCase("hello world");
+            // Console.Write(CamelCaseMethod.CamelCase("hello world"));
             // Console.WriteLine("\r\n***********************************");            
             // Console.WriteLine("");
 
