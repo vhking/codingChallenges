@@ -16,7 +16,7 @@ namespace codingChallenges.CodeWars
         public static string CamelCase(this string str)
         {
              // title casing converts the first character of a word to uppercase and the rest of the characters to lowercase. 
-             var upperCaseStr = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str.ToLower());
+             var upperCaseStr = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
              // Removes the spaces
              var upperCaseStrArray = upperCaseStr.Split(' ');
              // Joins it to a single word with an Upper case letter at every single new word

@@ -18,6 +18,8 @@ namespace codingChallenges
         private static BuildTower _tower = new BuildTower();
         private static HighestAndLowest _highLow = new HighestAndLowest();
         private static PersistentBugger _bugger = new PersistentBugger();
+
+        private static FindTheOddInt _oddIntCount = new FindTheOddInt(); 
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -70,10 +72,10 @@ namespace codingChallenges
 
             //  Console.WriteLine("Coding Challenge : towerBuild");      
               
-            //CamelCaseMethod.CamelCase("hello world");
-            // Console.Write(CamelCaseMethod.CamelCase("hello world"));
-            // Console.WriteLine("\r\n***********************************");            
-            // Console.WriteLine("");
+            
+            Console.Write(_oddIntCount.Find( new[] { 20, 1, -1, -1, -1, 5, 5, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 }));
+            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("");
 
 
 
