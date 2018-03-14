@@ -21,6 +21,8 @@ namespace codingChallenges
 
         private static FindTheOddInt _oddIntCount = new FindTheOddInt(); 
           private static PlayingWithDigits _play = new PlayingWithDigits(); 
+
+          private static ReverseOrRotate _rr = new ReverseOrRotate();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -74,7 +76,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
               
             
-            Console.Write(_play.digPower(89,1));
+            Console.Write(_rr.RevRot("563000655734469485",4));
             Console.WriteLine("\r\n***********************************");            
             Console.WriteLine("");
 
