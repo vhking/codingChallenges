@@ -9,7 +9,7 @@ namespace codingChallenges
     class Program
     {
         private static FizzBuzzSolution _fizzBuzzSolution = new FizzBuzzSolution();
-        private static PalindromeSolution _palindromeSolution = new PalindromeSolution();        
+        private static PalindromeSolution _palindromeSolution = new PalindromeSolution();
         private static UserInputSolution _userInputSolution = new UserInputSolution();
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
@@ -18,11 +18,10 @@ namespace codingChallenges
         private static BuildTower _tower = new BuildTower();
         private static HighestAndLowest _highLow = new HighestAndLowest();
         private static PersistentBugger _bugger = new PersistentBugger();
-
-        private static FindTheOddInt _oddIntCount = new FindTheOddInt(); 
-          private static PlayingWithDigits _play = new PlayingWithDigits(); 
-
-          private static ReverseOrRotate _rr = new ReverseOrRotate();
+        private static FindTheOddInt _oddIntCount = new FindTheOddInt();
+        private static PlayingWithDigits _play = new PlayingWithDigits();
+        private static ReverseOrRotate _rr = new ReverseOrRotate();
+        private static ValidParentheses _vp = new ValidParentheses();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -34,19 +33,19 @@ namespace codingChallenges
             _fizzBuzzSolution.FizzBuzzList();
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
-     
+
             Console.WriteLine("Coding Challange: Palindrome");
             Console.WriteLine("Array.Reverse:");
             Console.WriteLine("The word Vidarradiv is a palindrome : " + _palindromeSolution.Palindrome("Vidarradiv"));
             Console.WriteLine("While loop:");
             _palindromeSolution.PalindromeWhile("Vidarradiv");
-            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
-            Console.WriteLine("Coding challange: UserInput"); 
+            Console.WriteLine("Coding challange: UserInput");
             Console.Write("UserInput should print out 10. And it printed out -> ");
             _userInputSolution.UserInterface();
-            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
             Console.WriteLine("Coding Challenge : Multiplier of 3 and 5");
@@ -54,17 +53,17 @@ namespace codingChallenges
             _multiplierOf3And5.naturalNumbersBelow10();
             Console.WriteLine("\r\nNatural numbers below 1000");
             _multiplierOf3And5.naturalNumbersBelow1000();
-            Console.WriteLine("\r\n***********************************");            
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
-          
+
             Console.WriteLine("Coding Challenge : Even Fibonacci numbers");
-             _evenFibonaccciNumbers.EvenFibonacciSquence4M();
-            Console.WriteLine("\r\n***********************************");            
+            _evenFibonaccciNumbers.EvenFibonacciSquence4M();
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
-            
+
             Console.WriteLine("Coding Challenge : Largest prime factor");
-            _largetPrimeFactor.FindLargestPrimeFactor();         
-            Console.WriteLine("\r\n***********************************");            
+            _largetPrimeFactor.FindLargestPrimeFactor();
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
             // Console.WriteLine("Coding Challenge : blabla");
@@ -74,10 +73,10 @@ namespace codingChallenges
             // Console.WriteLine("");
 
             //  Console.WriteLine("Coding Challenge : towerBuild");      
-              
-            
-            Console.Write(_rr.RevRot("563000655734469485",4));
-            Console.WriteLine("\r\n***********************************");            
+
+
+            Console.Write(_vp.FindValidParentheses("()()(()"));
+            Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
 
