@@ -26,45 +26,74 @@ Do not treat other forms of brackets as parentheses (e.g. [], {}, <>).
     public class ValidParentheses
     {
         public bool FindValidParentheses(string input)
-        {
+        {            
             char[] charArray = input.ToCharArray();
             var leftParentheseCount = 0;
             var rightParantheseCount = 0;
-            var validParentheseCount = 0;
             if (charArray.Length == 0)
             {
                 return true;
             }
             foreach (var item in charArray)
             {
-
+                // counts left parenthese
                 if (item.Equals('('))
                 {
                     leftParentheseCount++;
                 }
+                // counts right parenthese
                 if (item.Equals(')'))
                 {
                     rightParantheseCount++;
                 }
 
+                // if the count of the left and right paranthese is equal
+                // then a single or a series of paranthese are closed
                 if (leftParentheseCount == rightParantheseCount)
-                {
-                    validParentheseCount++;
+                {  
+                    // starts over again to check the rest of the array                 
                     leftParentheseCount = 0;
                     rightParantheseCount = 0;
 
                 }
+                // if a right paranthese is the first in parenthese in a sequence
+                // the the result is invalid so it returns false
                 else if (rightParantheseCount > leftParentheseCount)
                 {
                     return false;
                 }
 
             }
+            // The count after the loop should be equal
             if (rightParantheseCount != leftParentheseCount)
             {
                 return false;
             }
             return true;
+        }
+
+        // Best practice
+        public static bool FindValidParenthesesBP(string input)
+        {
+            int parentheses = 0;
+            foreach (char t in input)
+            {
+                if (t == '(')
+                {
+                    parentheses++;
+                }
+                else if (t == ')')
+                {
+                    parentheses--;
+
+                    if (parentheses < 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return parentheses == 0;
         }
 
     }
