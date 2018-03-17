@@ -22,6 +22,8 @@ namespace codingChallenges
         private static PlayingWithDigits _play = new PlayingWithDigits();
         private static ReverseOrRotate _rr = new ReverseOrRotate();
         private static ValidParentheses _vp = new ValidParentheses();
+        private static SimplePigLatin _sp = new SimplePigLatin();
+       // private static CamelCaseMethod _cc = new CamelCaseMethod();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -75,7 +77,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
 
-            Console.Write(_vp.FindValidParentheses("()()(()"));
+            Console.Write(_sp.PigIt("This is my string"));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
