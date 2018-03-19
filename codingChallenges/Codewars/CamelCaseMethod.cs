@@ -48,8 +48,7 @@ namespace codingChallenges.CodeWars
             if (char.IsLower(str[0]))
             {
                 var strJoin = string.Join("", strArray);
-                result = Char.ToLowerInvariant(strJoin[0]) + strJoin.Substring(1);//strJoin.First().ToString().ToLower() + String.Join("", strJoin.Skip(1));
-
+                result = Char.ToLowerInvariant(strJoin[0]) + strJoin.Substring(1);
                 return result;
             }
             else

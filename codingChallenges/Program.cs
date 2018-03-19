@@ -14,16 +14,7 @@ namespace codingChallenges
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
-        private static SumOfTwoLowestPositiveIntegers _sum = new SumOfTwoLowestPositiveIntegers();
-        private static BuildTower _tower = new BuildTower();
-        private static HighestAndLowest _highLow = new HighestAndLowest();
-        private static PersistentBugger _bugger = new PersistentBugger();
-        private static FindTheOddInt _oddIntCount = new FindTheOddInt();
-        private static PlayingWithDigits _play = new PlayingWithDigits();
-        private static ReverseOrRotate _rr = new ReverseOrRotate();
-        private static ValidParentheses _vp = new ValidParentheses();
-        private static SimplePigLatin _sp = new SimplePigLatin();
-       // private static CamelCaseMethod _cc = new CamelCaseMethod();
+        private static WeightForWeight _wfw = new WeightForWeight();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -77,7 +68,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
 
-            Console.Write(_sp.PigIt("This is my string"));
+            Console.Write(_wfw.orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
