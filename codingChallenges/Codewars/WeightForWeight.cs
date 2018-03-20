@@ -41,59 +41,32 @@ namespace codingChallenges.CodeWars
     {
         public string orderWeight(string strng)
         {
+            string[] weights = strng.Split(' ');
+            return string.Join(" ",
+                  weights.OrderBy(sumOfDigits).
+                          GroupBy(sumOfDigits).
+                          SelectMany(g => g.OrderBy(s => s)));
+        }
 
- 
-            if(strng == string.Empty) 
-            return "";
-
-
-            var strList = strng.Split(' ').ToList();
-            List<int> list = new List<int>();
-            foreach (var item in strList)
+        private int sumOfDigits(string strng)
+        {
+            if (string.IsNullOrEmpty(strng)) return 0;
+            int sum = 0;
+            while (strng.Length > 0)
             {
-                var numSum = 0;
-                var splitNumList = item.Select(digit => int.Parse(digit.ToString())).ToList();
-                foreach (var num in splitNumList)
-                {
-                    numSum = numSum + num;
-                }
-                list.Add(numSum);
-                //numSum = 0;
-
+                sum += int.Parse(strng[0].ToString());
+                strng = strng.Substring(1);
             }
-            var temp = "";
-            for (int i = 0; i < list.Count; i++)
-            {
-
-                for (int j = 0; j < list.Count; j++)
-                {
-                    var li = list[i];
-                    var lj = list[j];
-                    if (list[i] > list[j])
-                    {
-                        temp = strList[j];
-                        strList[j] = strList[i];
-                        strList[i] = temp;
-                    }
-                    if (list[i] == list[j])
-                    {
-                        if (strList[i].Length > strList[j].Length)
-                        {
-                            temp = strList[j];
-                            strList[j] = strList[i];
-                            strList[i] = temp;
-                        }
-
-                    }
-
-                }
-
-
-            }
-            strList.Reverse();
-            var result = string.Join(" ", strList);
-            return result;
-
+            return sum;
+        }
+        
+        // best practice
+        public string orderWeightBP(string s)
+        {
+            return string.Join(" ", s.Split(' ')
+                .OrderBy(n => n.ToCharArray()
+                .Select(c => (int)char.GetNumericValue(c)).Sum())
+                .ThenBy(n => n));
         }
 
     }
