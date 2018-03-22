@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using codingChallenges.CodeWars;
 using codingChallenges.FizzBuzz;
 using codingChallenges.Palindrome;
@@ -67,8 +68,8 @@ namespace codingChallenges
 
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
-
-            Console.Write(_wfw.orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"));
+            var ts = new List<int> { 91, 74, 73, 85, 73, 81, 87 };
+            Console.Write(BestTravel.chooseBestSum(230, 3, ts));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
