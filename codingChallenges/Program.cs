@@ -15,7 +15,7 @@ namespace codingChallenges
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
-        private static SumOfDigitsDigitalRoot _root = new SumOfDigitsDigitalRoot();
+        private static StopGninnipsMySdrow _stop = new StopGninnipsMySdrow();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -69,7 +69,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
             var ts = new List<int> { 91, 74, 73, 85, 73, 81, 87 };
-            Console.Write(_root.DigitalRootBP(942));
+            Console.Write(_stop.SpinWords("This is another test"));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
