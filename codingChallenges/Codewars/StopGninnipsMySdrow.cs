@@ -21,8 +21,6 @@ namespace codingChallenges.CodeWars
     {
         public string SpinWords(string sentence)
         {
-
-
             var senteceList = sentence.Split(' ');
             var result = "";
 
@@ -58,6 +56,15 @@ namespace codingChallenges.CodeWars
             }
 
             return result;
+        }
+
+
+        // Best practice
+        public static string SpinWordsBPCleaver(string sentence)
+        {
+            return String
+                    .Join(" ", sentence.Split(' ')
+                        .Select(str => str.Length >= 5 ? new string(str.Reverse().ToArray()) : str));
         }
     }
 }

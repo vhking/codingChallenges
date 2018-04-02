@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using codingChallenges.Codewars;
 using codingChallenges.CodeWars;
 using codingChallenges.FizzBuzz;
 using codingChallenges.Palindrome;
@@ -15,7 +16,7 @@ namespace codingChallenges
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
-        private static StopGninnipsMySdrow _stop = new StopGninnipsMySdrow();
+        private static SplitStrings _stop = new SplitStrings();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -69,7 +70,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
             var ts = new List<int> { 91, 74, 73, 85, 73, 81, 87 };
-            Console.Write(_stop.SpinWords("This is another test"));
+            Console.Write(_stop.Solution("abc"));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
