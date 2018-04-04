@@ -5,7 +5,6 @@ using codingChallenges.CodeWars;
 using codingChallenges.FizzBuzz;
 using codingChallenges.Palindrome;
 using codingChallenges.ProjectEuler;
-using codingChallenges.Tests;
 using codingChallenges.UserInput;
 namespace codingChallenges
 {
@@ -18,7 +17,6 @@ namespace codingChallenges
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
         private static SplitStrings _stop = new SplitStrings();
-        private static SimpleIdValidation _test = new SimpleIdValidation();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -69,9 +67,7 @@ namespace codingChallenges
             // Console.WriteLine("\r\n***********************************");            
             // Console.WriteLine("");
 
-            //  Console.WriteLine("Coding Challenge : towerBuild");    
-
-            Console.Write(_test.Validatione("---a1a1a1---"));
+            //  Console.WriteLine("Coding Challenge : towerBuild");      
 
             var ts = new List<int> { 91, 74, 73, 85, 73, 81, 87 };
             Console.Write(_stop.Solution("abc"));
