@@ -16,7 +16,7 @@ namespace codingChallenges
         private static MultiplierOf3And5 _multiplierOf3And5 = new MultiplierOf3And5();
         private static EvenFibonacciNumbers _evenFibonaccciNumbers = new EvenFibonacciNumbers();
         private static LargestPrimeFactor _largetPrimeFactor = new LargestPrimeFactor();
-        private static SplitStrings _stop = new SplitStrings();
+        private static Dubstep _stop = new Dubstep();
         static void Main(string[] args)
         {
             // Call the induvidual coding challanges
@@ -70,7 +70,7 @@ namespace codingChallenges
             //  Console.WriteLine("Coding Challenge : towerBuild");      
 
             var ts = new List<int> { 91, 74, 73, 85, 73, 81, 87 };
-            Console.Write(_stop.Solution("abc"));
+            Console.Write(_stop.SongDecoder("RWUBWUBWUBLWUB"));
             Console.WriteLine("\r\n***********************************");
             Console.WriteLine("");
 
